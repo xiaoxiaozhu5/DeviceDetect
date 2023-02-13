@@ -1,8 +1,7 @@
 #ifndef _IENUMERATOR_H_
 #define _IENUMERATOR_H_
 
-#include <boost/shared_ptr.hpp>
-#include <boost/noncopyable.hpp>
+#include "macros.h"
 #include <vector>
 
 namespace DeviceDetectLibrary
@@ -18,7 +17,7 @@ namespace DeviceDetectLibrary
         virtual ~IEnumerator() {}
     };
 
-    typedef boost::shared_ptr<IEnumerator> IEnumeratorPtr;
+    typedef std::shared_ptr<IEnumerator> IEnumeratorPtr;
     typedef std::vector<IEnumeratorPtr> IEnumerators;
 
 }

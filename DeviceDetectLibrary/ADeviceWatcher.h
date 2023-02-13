@@ -1,9 +1,6 @@
 #ifndef _A_DEVICE_WATCHER_H_
 #define _A_DEVICE_WATCHER_H_
 
-#include <boost/noncopyable.hpp>
-#include <boost/shared_ptr.hpp>
-
 #include "Win_CriticalSection.h"
 #include "IDeviceChanged.h"
 #include "ICollector.h"
@@ -44,6 +41,6 @@ namespace DeviceDetectLibrary
         std::auto_ptr<NotifyWindow> window_;
     };
 
-    typedef boost::shared_ptr<ADeviceWatcher> DeviceWatcherPtr;
+    typedef std::shared_ptr<ADeviceWatcher> DeviceWatcherPtr;
 }
-#endif _A_DEVICE_WATCHER_H_
+#endif //_A_DEVICE_WATCHER_H_

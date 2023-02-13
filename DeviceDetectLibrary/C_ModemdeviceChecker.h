@@ -22,7 +22,7 @@ namespace DeviceDetectLibrary
         std::vector<std::wstring> _patternNames;
 
     };
-    typedef boost::shared_ptr<ModemDeviceChecker> ModemDeviceNameParserPtr;
+    typedef std::shared_ptr<ModemDeviceChecker> ModemDeviceNameParserPtr;
     typedef std::vector<ModemDeviceNameParserPtr> ModemDeviceNameParsers;
 
 }

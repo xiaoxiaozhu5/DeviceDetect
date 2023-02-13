@@ -1,7 +1,6 @@
 #ifndef _NOTIFYWINDOW_H_
 #define _NOTIFYWINDOW_H_
 
-#include <boost/noncopyable.hpp>
 #include "Win_ManualResetEvent.h"
 #include "Win_Thread.h"
 

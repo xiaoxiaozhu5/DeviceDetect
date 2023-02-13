@@ -11,7 +11,6 @@
 
 #define WIN32_LEAN_AND_MEAN		// Exclude rarely-used stuff from Windows headers
 
-#include <boost/bind.hpp>
 #include <algorithm>
 #include <objbase.h>
 #include <atlbase.h>
@@ -33,4 +32,5 @@
 
 #include "EnumDevices.h"
 #include "EnumDisks.h"
+
 

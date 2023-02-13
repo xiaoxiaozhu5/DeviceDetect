@@ -3,7 +3,7 @@
 
 #include <string>
 #include <map>
-#include <boost/shared_ptr.hpp>
+#include <memory>
 
 #include "ConnectionInfo.h"
 
@@ -71,7 +71,7 @@ namespace DeviceDetectLibrary
     };
 
     typedef std::map<DeviceInfo::DeviceId, DeviceInfo> Devices;
-    typedef boost::shared_ptr<DeviceInfo> DeviceInfoPtr;
+    typedef std::shared_ptr<DeviceInfo> DeviceInfoPtr;
 
 
 }

@@ -1,7 +1,6 @@
 #ifndef _C_AUSBENUMERATOR_H_
 #define _C_AUSBENUMERATOR_H_
 
-#include <boost/shared_ptr.hpp>
 #include <windows.h>
 #include <string>
 #include <map>
@@ -42,15 +41,15 @@ namespace DeviceDetectLibrary
                 HDEVNOTIFY devNotify_;
             };
 
-            typedef boost::shared_ptr<GTPair> GTPairPtr;
+            typedef std::shared_ptr<GTPair> GTPairPtr;
             typedef std::vector<GTPairPtr> GuidTable;
 
             GuidTable table_;
             ICollector& collector_;
         };
 
-        typedef boost::shared_ptr<AUsbEnumerator> UsbEnumeratorPtr;
+        typedef std::shared_ptr<AUsbEnumerator> UsbEnumeratorPtr;
     }
 }
 
-#endif _C_AUSBENUMERATOR_H_
+#endif //_C_AUSBENUMERATOR_H_

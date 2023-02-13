@@ -4,8 +4,6 @@
 #include "Win_Thread.h"
 #include "Win_ManualResetEvent.h"
 
-#include <boost/shared_ptr.hpp>
-
 namespace DeviceDetectLibrary
 {
     namespace Connection
@@ -34,7 +32,7 @@ namespace DeviceDetectLibrary
 
         };
 
-        typedef boost::shared_ptr<MSChecker> MSCheckerPtr;
+        typedef std::shared_ptr<MSChecker> MSCheckerPtr;
     }
 }
 

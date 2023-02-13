@@ -17,4 +17,7 @@ UsbEnumerator::UsbEnumerator(const NotifyWindow& window, ICollector& collector)
 
     GUID guidModem = {0x2c7089aa, 0x2e0e, 0x11d1, {0xb1, 0x14, 0x00, 0xc0, 0x4f, 0xc2, 0xaa, 0xe4}}; 
     AddCollector(guidModem, IEnumeratorPtr(new ModemEnumeraror(collector)), window);
+
+    GUID guidUSBDevice = { 0xA5DCBF10, 0x6530, 0x11D2, { 0x90, 0x1F, 0x00, 0xC0, 0x4F, 0xB9, 0x51, 0xED } };
+    AddCollector(guidUSBDevice, IEnumeratorPtr(new ResultEnumerator(collector, L"Universal", L"general USB device")), window);
 }

@@ -35,7 +35,7 @@ namespace DeviceDetectLibrary
 
         };
 
-        typedef boost::shared_ptr<MSEnumerator> MSEnumeratorPtr;
+        typedef std::shared_ptr<MSEnumerator> MSEnumeratorPtr;
     }
 }
 
