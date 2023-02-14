@@ -258,7 +258,7 @@ std::vector<unsigned int> GetHarddiskIndexes(const std::wstring& wsPath)
         NULL,
         OPEN_EXISTING,
         FILE_ATTRIBUTE_NORMAL | FILE_FLAG_BACKUP_SEMANTICS,
-        NULL) );
+        NULL), AutoHandle::Nothrow() );
 
     VOLUME_DISK_EXTENTS vde;
     ::ZeroMemory(&vde, sizeof(VOLUME_DISK_EXTENTS));
@@ -309,7 +309,7 @@ std::vector<unsigned int> GetHarddiskIndexes(const std::wstring& wsPath)
 
 DiskGeometry GetDeviceGeometry(const std::wstring& wsDevInterfaceVolume)
 {
-    DiskGeometry result;
+    DiskGeometry result{};
 
     AutoHandle hDisk( ::CreateFileW( 
         wsDevInterfaceVolume.c_str(), 
@@ -318,7 +318,7 @@ DiskGeometry GetDeviceGeometry(const std::wstring& wsDevInterfaceVolume)
         NULL, 
         OPEN_EXISTING, 
         NULL, 
-        NULL) );
+        NULL), AutoHandle::Nothrow() );
 
     DWORD dwRead = 0;
     BOOL bResult = ::DeviceIoControl(
@@ -333,7 +333,7 @@ DiskGeometry GetDeviceGeometry(const std::wstring& wsDevInterfaceVolume)
 
     if ( FALSE == bResult )
     {
-        throw std::runtime_error("Can't get drive geometry");
+        //throw std::runtime_error("Can't get drive geometry");
     }
 
     return result;

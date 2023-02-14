@@ -66,15 +66,6 @@
     <ClCompile Include="C_AUsbEnumerator.cpp">
       <Filter>Source Files\Connection</Filter>
     </ClCompile>
-    <ClCompile Include="C_BlackBerryUsbEnumerator.cpp">
-      <Filter>Source Files\Connection</Filter>
-    </ClCompile>
-    <ClCompile Include="C_ModemdeviceChecker.cpp">
-      <Filter>Source Files\Connection</Filter>
-    </ClCompile>
-    <ClCompile Include="C_ModemEnumeraror.cpp">
-      <Filter>Source Files\Connection</Filter>
-    </ClCompile>
     <ClCompile Include="C_MSChecker.cpp">
       <Filter>Source Files\Connection</Filter>
     </ClCompile>
@@ -144,15 +135,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="C_AUsbEnumerator.h">
-      <Filter>Header Files\Connection</Filter>
-    </ClInclude>
-    <ClInclude Include="C_BlackBerryUsbEnumerator.h">
-      <Filter>Header Files\Connection</Filter>
-    </ClInclude>
-    <ClInclude Include="C_ModemdeviceChecker.h">
-      <Filter>Header Files\Connection</Filter>
-    </ClInclude>
-    <ClInclude Include="C_ModemEnumeraror.h">
       <Filter>Header Files\Connection</Filter>
     </ClInclude>
     <ClInclude Include="C_MSChecker.h">

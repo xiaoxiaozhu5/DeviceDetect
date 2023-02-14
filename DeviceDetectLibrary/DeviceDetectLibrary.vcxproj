@@ -78,9 +78,6 @@
     <ClCompile Include="AutoCriticalSection.cpp" />
     <ClCompile Include="ConnectionInfo.cpp" />
     <ClCompile Include="C_AUsbEnumerator.cpp" />
-    <ClCompile Include="C_BlackBerryUsbEnumerator.cpp" />
-    <ClCompile Include="C_ModemdeviceChecker.cpp" />
-    <ClCompile Include="C_ModemEnumeraror.cpp" />
     <ClCompile Include="C_MSChecker.cpp" />
     <ClCompile Include="C_MSEnumerator.cpp" />
     <ClCompile Include="C_UsbEnumerator.cpp" />
@@ -106,9 +103,6 @@
     <ClInclude Include="AutoCriticalSection.h" />
     <ClInclude Include="ConnectionInfo.h" />
     <ClInclude Include="C_AUsbEnumerator.h" />
-    <ClInclude Include="C_BlackBerryUsbEnumerator.h" />
-    <ClInclude Include="C_ModemdeviceChecker.h" />
-    <ClInclude Include="C_ModemEnumeraror.h" />
     <ClInclude Include="C_MSChecker.h" />
     <ClInclude Include="C_MSEnumerator.h" />
     <ClInclude Include="C_UsbEnumerator.h" />
